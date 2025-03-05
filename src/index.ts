@@ -12,9 +12,9 @@ app.use(cors());
 
 const port = process.env.PORT
 
-app.listen(port,()=>{
+/*app.listen(port,()=>{
     console.log(`http://localhost:${port}`)
-})
+})*/
 
 
 const contract : ContractService = new ContractService();
@@ -71,4 +71,6 @@ app.get('/transfer/:wallet',async (req,res)=>{
     res.json(response);
 
 })
+
+export default app;
 
